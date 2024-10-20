@@ -1,0 +1,54 @@
+/* Product List Grid */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 product cards per row */
+  gap: 20px;
+  /* spacing between product cards */
+  padding: 20px;
+}
+
+.product-card {
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for product cards */
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image inside the product card */
+.product-card img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  margin-bottom: 10px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1024px) {
+  .product-list {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 product cards per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .product-list {
+    grid-template-columns: repeat(1, 1fr);
+    /* 1 product card per row */
+  }
+}
+
+@media (max-width: 480px) {
+
+
+  .product-card img {
+    max-width: 150px;
+  }
+
+  .product-actions button {
+    font-size: 12px;
+    padding: 8px;
+  }
+}

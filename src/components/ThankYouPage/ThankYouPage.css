@@ -1,0 +1,98 @@
+.t-main-container {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+
+}
+
+.t-card-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 453px;
+    height: 661px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.close-icon-button{
+    background: none;
+    border: none;
+}
+.close-icon{
+    margin-left: 25rem;
+    margin-top: 1rem;
+}
+
+.t-heading {
+    color: #0F4811;
+    font-family: Poppins;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.hr-line {
+    width: 389px;
+    height: 0px;
+    top: 87px;
+    left: 32px;
+    gap: 0px;
+    border: 0.8px solid #B0B0B0;
+    opacity: 1;
+    /* Make it visible */
+}
+
+.t-image {
+    width: 97px;
+    height: 98px;
+    margin-top: 2rem;
+
+
+}
+
+.t-heading2 {
+    width: 230px;
+    height: 83px;
+    font-family: "Poppins";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: center;
+    color: #165315;
+    margin-top: 2rem;
+
+
+}
+
+.t-text {
+    width: 422px;
+    height: 39px;
+    color: #165315;
+    margin-top: 2rem;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+
+}
+
+.t-card-button {
+    width: 307px;
+    height: 45px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    background: #165315;
+    color: #FFFFFF;
+    border: none;
+    margin-top: 5rem;
+    cursor: pointer;
+}
+.t-card-button:hover {
+    background-color: #0056b3;
+  }

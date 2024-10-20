@@ -1,0 +1,146 @@
+.product-card {
+  width: 268px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+
+  /* Set a fixed width for the product card */
+}
+
+.card-image {
+  width: 255px;
+  height: 246px;
+  margin-top: 5px;
+
+}
+
+.view-product {
+  width: 268px;
+  height: 36px;
+  background-color: #165315;
+  color: white;
+}
+
+.product-details {
+  width: 268px;
+  height: 160px;
+  margin-bottom: 10px;
+
+}
+
+.add {
+  width: 150px;
+  height: 37px;
+  border-radius: 10px;
+  font-size: 12px;
+  background-color: #165315;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.count {
+  background-color: #165315;
+  border: none;
+  color: white;
+}
+
+.quantity-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.quantity-control button {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+}
+
+.product-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buy-button {
+  height: 23px;
+  width: 150px;
+  height: 37px;
+  border-radius: 10px;
+  font-size: 12px;
+  margin-left: 1rem;
+  border: 1px solid #165315;
+
+}
+
+.description {
+  color: #838383;
+  padding: 0px;
+  margin: 0px;
+}
+
+.rating {
+  width: 87px;
+  height: 19px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.product-price {
+  padding: 0px;
+  margin: 0px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+
+}
+
+.rating-container {
+  display: flex;
+}
+
+.rating-num {
+  color: #A5A1A1;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0px;
+  margin: 0px;
+}
+
+.modal-overlay {
+  position: fixed;
+  /* Fixes the overlay to the viewport */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  /* Dark overlay */
+  display: flex;
+  /* Use flexbox to center content */
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  z-index: 1000;
+  /* Ensure the modal is above other content */
+}
+
+.modal-content {
+  background: white;
+  /* White background for the modal */
+  padding: 20px;
+  border-radius: 8px;
+  /* Rounded corners */
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  /* Shadow effect */
+}

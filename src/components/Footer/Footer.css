@@ -1,0 +1,137 @@
+.f-main-container {
+    margin-top: 50px;
+    width: 100%;
+    height: 718px;
+    background: #F0FFE5;
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.f-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.f-h5-heaing {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    height: 49px;
+
+}
+
+.subscription-container {
+    width: 258px;
+}
+
+.f-services-container {
+    width: 193px;
+    height: 29px;
+
+
+}
+
+.f-useful-container {
+    width: 193px;
+    height: 28px;
+}
+
+.f-getintouch-container {
+    width: 218px;
+    height: 237px;
+}
+
+.f-button {
+    width: 130px;
+    height: 35px;
+    top: 50px;
+    gap: 0px;
+    border-radius: 30px;
+    background: #247822;
+    color: white;
+    margin-top: 20px;
+    border: none;
+}
+
+.f-aboutus-container {
+    width: Fixed (184px)px;
+    height: Hug (165px)px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.ul-list {
+    list-style: none;
+}
+
+.chaperone-container {
+    width: 1175px;
+
+}
+
+.insta-icon {
+    margin-right: 1rem;
+    width: 24.68px;
+    height: 24px;
+}
+
+.facebook-icon {
+    width: 24.68px;
+    margin-right: 1rem;
+    height: 24px;
+}
+
+.thread-icon {
+    margin-right: 1rem;
+    width: 22px;
+    height: 22px;
+}
+
+.youtube-icon {
+    margin-right: 1rem;
+    width: 24.68px;
+    height: 26px;
+}
+
+.linkedin-icon {
+    margin-right: 1rem;
+    width: 26px;
+    height: 26px;
+}
+
+.icons-container a {
+    display: inline-block;
+    /* Makes the anchor tag behave like an inline block */
+    margin: 0 10px;
+    /* Space between icons */
+    color: inherit;
+    /* Inherit color from parent for consistency */
+    transition: transform 0.3s, color 0.3s;
+    /* Smooth transition effect */
+}
+
+.icons-container a:hover {
+    transform: scale(1.1);
+    /* Slightly scale up on hover */
+    color: #007bff;
+    /* Change color on hover, customize as needed */
+}
+
+.hr-tag {
+    width: 90vw;
+    border: 0.7px 0px 0px 0px;
+    border: 0.7px solid #0000004D;
+    padding: 0px;
+}
+
+.rights {
+    color: #0000004D;
+
+}
