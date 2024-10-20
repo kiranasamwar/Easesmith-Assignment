@@ -17,7 +17,6 @@ const ProductCard = ({ product }) => {
   const confirmAddToCart = () => {
     setShowModal(false); // Hide modal
     alert(`Added ${quantity} ${product.name} to cart!`);
-    // Handle actual add-to-cart logic here
   };
 
   const viewProduct = () => {
