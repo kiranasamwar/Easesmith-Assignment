@@ -1,11 +1,19 @@
+.pl-container {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+
 /* Product List Grid */
 .product-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   /* 3 product cards per row */
   gap: 20px;
   /* spacing between product cards */
   padding: 20px;
+  justify-content: center;
+  padding-top: 0px;
 }
 
 .product-card {
@@ -23,6 +31,91 @@
   height: auto;
   max-width: 200px;
   margin-bottom: 10px;
+}
+
+/* Container for the filter sidebar */
+.filter-sidebar {
+  height: 36rem;
+  width: 250px;
+  background-color: #f3fce6;
+  /* light green background */
+  padding: 20px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  color: #a1a1a1;
+  /* light gray text color */
+  margin-bottom: 20px;
+}
+
+.clear-all {
+  background: none;
+  border: none;
+  color: #a1a1a1;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.clear-all:hover {
+  text-decoration: underline;
+}
+
+/* List styling */
+.filter-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plants-container {
+  margin-left:5rem;
+}
+.a1{
+  border-radius:0px; 
+  font-size:16px;
+  font-weight:500;
+  align-items:center;
+  width:5rem;
+  margin-bottom:2rem;
+}
+.b1{
+  background-color: #165315;
+  color:white;
+}
+.text{
+  color: #838383;
+
+}
+
+.buttons-conatiner {
+  display: flex;
+
+}
+
+/* Each filter item styling */
+.filter-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #d9d9d9;
+  color: #606060;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.filter-item:hover {
+  color: #000;
+}
+
+.plus-icon {
+  font-weight: bold;
+  color: #a1a1a1;
 }
 
 /* Media Queries for responsiveness */

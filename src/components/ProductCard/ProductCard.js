@@ -34,7 +34,7 @@ const ProductCard = ({ product }) => {
           <h3>{product.name}</h3>
           <p className="description">{product.description}</p>
           <div className="rating-container">
-            <img className="rating" src={product.rating} alt="rating" />
+            <img className="rating" src='https://s3-alpha-sig.figma.com/img/b5dd/460d/2d5f9291095d1210262f4a0d5f4c77e7?Expires=1731283200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=idA8mJzb~jCQ9bsSTyd1i5RU5DJsgb1cSf7-u8dw80CfS5rp~GKylaAJRkr6s98Bmc0bzMBc9fNiWn7IyuYBtOkh~BstP9U4RMqrmfCmChrOmk1gdVIKm437lHxdU77MkAA521Qb5PaZN5ZdT4T78ft32RsVdAkaB08YibDmuvtMTOj0VH9Del9qA0RlBNgAo0hIRWl8LZKQnuzyUleXfhYCteFHFGojPMwSyj-kFpHjoZAaWGIbjHh0G~NYS3SopjL7jDm6PTB-JpRBCFMqOuBlN7J2-HxRlEZeikzs5FgTQlFcpH92BNteloR80RVFXNe6PG8AfKCPaa4YLOvkiQ__' alt="rating" />
             <p className="rating-num">4.9</p>
           </div>
           <p className="product-price">{product.price}</p>
@@ -62,8 +62,8 @@ const ProductCard = ({ product }) => {
             <p>
               Add {quantity} {product.name} to the cart?
             </p>
-            <button onClick={confirmAddToCart}>Confirm</button>
-            <button onClick={() => setShowModal(false)}>Cancel</button> {/* Added the Cancel button */}
+            <button className="modal-button" onClick={confirmAddToCart}>Confirm</button>
+            <button className="modal-button" onClick={() => setShowModal(false)}>Cancel</button> {/* Added the Cancel button */}
           </div>
         </div>
       )}

@@ -1,0 +1,28 @@
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto 10px;
+    border-bottom: 2px solid #ccc; /* Change to desired border color */
+    margin-top:40px;
+  }
+  
+  .search-icon {
+    font-size: 1.5rem; /* Equivalent to text-3xl */
+    color: #838383;
+  }
+  
+  .search-input {
+    width: 100%;
+    max-width: 400px; /* Adjust based on your design */
+    padding: 12px; /* Equivalent to Tailwind's p-3 */
+    outline: none;
+  }
+  
+  .logo {
+    width: 40px; /* Equivalent to w-10 */
+    margin-left: 16px; /* Equivalent to ml-4 */
+    margin-bottom: -9px; /* Equivalent to -mb-4 */
+  }
+  

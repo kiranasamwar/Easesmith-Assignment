@@ -1,7 +1,9 @@
+import {Link} from 'react-router-dom'
 import React from 'react'
 import './Navbar.css'
 // import { CgProfile } from "react-icons/cg";
 // import { BsCart2 } from "react-icons/bs";
+import logo from '../../assets/logo.png'
 
 
 function Navbar() {
@@ -17,8 +19,9 @@ function Navbar() {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className='nav-second-container'>
-                        <img className='logo' src='https://s3-alpha-sig.figma.com/img/7220/1328/eefc66cd70960daab6449206c3540858?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IZj9rZ8pk0DIPcS2gKzcDeslH6xchJ--XbU~C~owkS5n12psMSHEc5JLnmtBqZj7Vn~PDRKvvfd3LMAAqOLeS8rUSTIaBpqfw1IH~RarF6TEPIpWDQcLG4mPhvhaGl52L0aF7TV5uyRtFDsS3r0eqIy6sM8vBwxGiPHU0NUoV9ryEbIuJz4StnWANiDRBUP5-niwgRODOkPjFHOLb-2mnal4LB9Gz104NjhXPLD4qI-l79aNCrAfVhZAMCsyksp6liOQ5gM1cl-KIp2J0o6gs6SOhmmHmrjz25yGvb9mNGsWoUxa25a6sLeVS4mYChjxGFOL0rsZ-GZ663dYfGLLNg_' alt='logo' />    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                            <h2 className='logo-text'>Chaperone</h2>
+                        <Link to='/'><img className='logo' src={logo} alt='logo' /> </Link>  
+                        <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
+                            <Link to='/'><h2 className='logo-text'>Chaperone</h2></Link>
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0  navbar-class">
                                 <li className="nav-item nav-link active names"> Home</li>
                                 <li className="nav-item nav-link names"> Plants & Pots</li>
@@ -32,8 +35,6 @@ function Navbar() {
                                         <li className="dropdown-item">Fertolozers</li>
                                         <li className="dropdown-item">Watering Cans</li>
                                         <li className="dropdown-item">Gardening Accessories</li>
-
-
                                     </ul>
                                 </div><div className="dropdown-center">
                                     <button className=" dropdown-toggle button1 names" type="button" data-bs-toggle="dropdown" aria-expanded="false">

@@ -2,6 +2,8 @@ import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import './ThankYouPage.css';
 import { IoClose } from "react-icons/io5";
+import t1 from "../../assets/t1.png";
+
 
 function ThankYouPage() {
     const location = useLocation();
@@ -26,7 +28,7 @@ function ThankYouPage() {
                 <h1 className='t-heading'>Your Cart</h1>
                 <hr className='hr-line' />
                 <h1 className='t-heading2'>Congratulations, Order Placed!</h1>
-                <img src='https://s3-alpha-sig.figma.com/img/da30/c60d/14d6293522911d4a2548b9b1cf65a33a?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZgKKIrx1v2QUz4fX2mBvb3nPC3aOp2RcHYU7~TgXtlP4G4lDYmL0xuOY7DKJKdhum-USfGEqnBwhWQZ1nqspzsS8tmvwwkqXSHQoA7p3jz5L1sVJfMMbHBBLleqQpbQbNwTLtaEuEnYK5~sLf~p-nuYM8RLyt5KvfMwFOgM~UylWTzJOSmInN47VMWplVhiGENFa3Bl8MtN6A6cosEVsCZF~oosEu4IYdGCxnl69-nex04r6gR3ZoReAVb4ND0084qLGAwKXwNRfJPlT8MlEC1s2CZJArhC6Tw3CKWGQ2wz0Fr9y6xQlBLFXrKTrbMaXcgJps09Yvxi9EZ4zPgKRqg'
+                <img src={t1}
                     className='t-image' alt='plant-image' />
                 <p className='t-text'>
                     Thank you for your interest in {productName}!<br />

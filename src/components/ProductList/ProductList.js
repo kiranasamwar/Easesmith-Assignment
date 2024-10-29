@@ -3,6 +3,9 @@ import Pagination from '../Pagination/Pagination';
 import AddToCartModal from '../AddToCartModal/AddToCartModal';
 import ProductCard from '../ProductCard/ProductCard';
 import './ProductList.css'
+import NurserySlider from '../NurserySlider/NurserySlider';
+import SearchBar from '../SearchBar/SearchBar';
+
 
 const mockProducts = [{
     id: 1,
@@ -44,7 +47,7 @@ const mockProducts = [{
     price: "$299",
     image: "https://i.pinimg.com/enabled_hi/564x/39/49/d2/3949d2f69c4c7daa5ff22bb42bd408bb.jpg",
 },
-{ 
+{
     id: 6,
     name: "Aglaonima",
     description: "Indoor Plant, Low maintenance",
@@ -184,27 +187,70 @@ const ProductList = () => {
     };
 
     const displayedProducts = products.slice((currentPage - 1) * productsPerPage, currentPage * productsPerPage);
+    const filters = [
+        "Type of Plants",
+        "Price",
+        "Nursery",
+        "Ideal Plants Location",
+        "Indoor/ Outdoor",
+        "Maintenance",
+        "Plant Size",
+        "Water Schedule",
+        "Color",
+        "Seasonal",
+        "Light Efficient"
+    ];
 
     return (
-        <div>
-            <div className="product-list">
-                {displayedProducts.map(product => (
-                    <ProductCard key={product.id} product={product} onAddToCart={handleAddToCart} />
-                ))}
+        <>
+            <SearchBar />
+            <div className="plants-container">
+                <div className="buttons-conatiner">
+                    <button className=" a1 add-to-cart-btn  b1">Plants</button>
+                    <button className=' a1 buy-button'>Pots</button>
+                </div>
+                <p className="text">Lorem ipsum dolor sit amet. Aut ipsam illum et nostrum quidem aut necessitatibus enim ut internos accusantium a numquam autem ab rerum omnis. Non molestiae ratione et laborum doloribus aut molestiae voluptates ut porro excepturi sit molestiae obcaecati qui quis beatae est voluptatem eius. Et architecto nihil id labore omnis hic iste deleniti et porro aspernatur.  </p>
             </div>
+            <NurserySlider />
+            <div className='pl-container'>
+                <div className="filter-sidebar">
+                    <div className="filter-header">
+                        <span>Filter</span>
+                        <button className="clear-all">CLEAR ALL</button>
+                    </div>
+                    <ul className="filter-list">
+                        {filters.map((filter, index) => (
+                            <li key={index} className="filter-item">
+                                <span>{filter}</span>
+                                <span className="plus-icon">+</span>
+                            </li>
+                        ))}
+                    </ul>
 
-            <Pagination
-                currentPage={currentPage}
-                totalPages={totalPages}
-                onPageChange={onPageChange}
-            />
+                    
+                </div>
+                <div>
+                    <div className="product-list">
+                        
+                        {displayedProducts.map(product => (
+                            <ProductCard key={product.id} product={product} onAddToCart={handleAddToCart} />
+                        ))}
+                    </div>
 
-            <AddToCartModal
-                product={selectedProduct}
-                onClose={closeModal}
-                onConfirm={confirmAddToCart}
-            />
-        </div>
+
+                    <Pagination
+                        currentPage={currentPage}
+                        totalPages={totalPages}
+                        onPageChange={onPageChange}
+                    />
+
+                    <AddToCartModal
+                        product={selectedProduct}
+                        onClose={closeModal}
+                        onConfirm={confirmAddToCart}
+                    />
+                </div>
+            </div></>
     );
 };
 

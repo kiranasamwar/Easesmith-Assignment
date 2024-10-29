@@ -1,0 +1,45 @@
+.nursery-slider-container {
+  width: 98%;
+  padding: 32px 16px;
+  margin: 0 auto;
+}
+
+.story-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.story-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.story-description {
+  color: #838383;
+  padding: 0 16px;
+  font-weight: 500;
+  font-size: 0.875rem;
+  margin-top: 16px;
+}
+/* NurserySlider.css */
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick"; 
+  font-size: 20px;
+  color: #838383;
+
+}
+
+.slick-prev:before {
+  content: "←"; 
+}
+
+.slick-next:before {
+  content: "→"; 
+}
